@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 850px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+nav {
+    height: 200px;
+    background-color: #000000;
+    position: fixed;
+    width: 1400px;
+    top: 0;
+}
+
+.line {
+    height: 50px;
+    background-color: #000000;
+    max-width: 1400px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    max-width: 800px;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+nav ul:first-child > li {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.matches {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header-details {
+    height: 800px;
+    background: url("../img/header-image.jpg") no-repeat;
+    background-size: 1400px 850px;
+}
+
+.header-details-wrapper {
+    display: flex;
+    height: 800px;
+    max-width: 1400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.header-details-wrapper h2 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header-details-wrapper button {
+    width: 150px;
+    height: 50px;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+}
+
+.header-details-wrapper button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+main {
+    max-width: 1400px;
+    height: 1500px;
+    margin: auto;
+}
+
+main .about {
+    background: url("../img/main-image.jpg") no-repeat;
+    max-width: 1400px;
+    height: 1000px;
+}
+
+main .about .about-wrapper {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about .about-wrapper h2 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+main .about .about-wrapper p {
+    max-width: 400px;
+    font-size: 24px;
+}
+
+main .features {
+    height: 500px;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: -30px;
+}
+
+main .features h2 {
+    text-align: center;
+    font-size: 56px;
+}
+
+.features-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 400px;
+}
+
+
+.features-wrapper h3 {
+    text-align: center;
+}
+
+footer {
+    max-width: 1400px;
+    height: 300px;
+    background-color: #000000;
+    margin: auto;
+}
+
+footer .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 90%;
+}
+
+footer .contact-wrapper ul {
+    list-style-type: none;
+}
+
+footer .contact-wrapper h2 {
+    color: #ffffff;
+}
+
+footer .contact-wrapper ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer span {
+    color: #ffffff;
+    display: block;
+    margin-left: 50px;
+}
+
+li {
+    color: white;
+}
+
+.inner-list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 30%;
+    margin-top: -90px;
+    cursor: pointer;
+}
+
+.inner-list li {
+    text-align: left;
+}
+
+.inner-list-burger {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 30%;
+    margin-top: 100px;
+    cursor: pointer;
+    max-width: 230px;
+}
+
+.inner-list-burger li {
+    text-align: left;
+}
+
+.matches:hover {
+    color: lightblue;
+    transition: 0.2s all ease-in;
+}
+
+nav li:hover {
+    color: lightblue;
+    transition: 0.2s all ease-in;
+}
+
+a:hover {
+    color: lightblue;
+    transition: 0.2s all ease-in;
+}
+
+.flex {
+    display: flex !important;
+}
+
+@media screen and (max-width: 1135px) {
+   header,main,footer {
+       max-width: 1135px;
+   }
+
+   main {
+       height: 1800px;
+   }
+
+   main .about {
+        background: url("../img/main-image.jpg") no-repeat;
+        max-width: 1400px;
+        height: 1000px;
+        background-size: 100% 1000px;
+    }
+
+   .header-details {
+        height: 800px;
+        background: url("../img/header-image.jpg") no-repeat;
+        background-size: 100% 850px;
+    }
+
+    .header-details h2 {
+        font-size: 40px;
+    }
+
+   .features-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 400px;
+    }
+
+    footer .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    header,main,footer {
+        max-width: 835px;
+    }
+ 
+    .burger-button {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        position: relative;
+        top: 5px;
+        left: 50px;
+    }
+
+    .burger-button div {
+        background-color: #ffffff;
+        width: 35px;
+        margin-top: 3px;
+        height: 4px;
+    }
+
+    .more-height {
+        height: 300px;
+    }
+
+    .burger-menu-block {
+        display: block;
+        width: 500px;
+        height: 100px;
+    }
+
+    body header nav .inner-list-burger {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 30%;
+        margin-top: 90px;
+        cursor: pointer;
+    }
+
+    .burger-menu ul {
+        display: block;
+    }
+
+     nav ul {
+        display: none;
+    }    
+
+    main {
+        height: 2300px;
+    }
+
+    main .about {
+        background: url("../img/main-image.jpg") no-repeat;
+        max-width: 1400px;
+        height: 1100px;
+        background-size: 100% 1000px;
+    }
+
+    .header-details {
+        height: 800px;
+        background: url("../img/header-image.jpg") no-repeat;
+        background-size: 100% 850px;
+    }
+
+    .header-details h2 {
+        font-size: 24px;
+    }
+ 
+    .features-wrapper {
+         display: grid;
+         grid-template-columns: 1fr;
+         height: 400px;
+         justify-items: center;
+     }
+
+     footer {
+         height: 350px;
+     }
+
+     footer .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}

@@ -1,0 +1,65 @@
+header {
+    height: 300px;
+}
+
+main {
+    height: 100%;
+}
+
+main li {
+    color: #000000;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main form {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.news ul, .response ul li {
+    list-style-type: none;
+}
+
+.news ul li, .response ul li {
+    width: 250px;
+}
+
+.news-wrapper .news, .response-wrapper .response {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fans-out, .admin-out {
+    display: flex;
+    justify-content: center;
+}
+
+.warning {
+    text-align: center;
+    color: red;
+}
+
+
+.red {
+    border: 1px solid red;
+}
+
+.fans-out ul, .admin-out ul {
+    max-width: 500px;
+    height: 100px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fans-out ul li:hover, .admin-out ul li:hover {
+    color: #000000;
+}
